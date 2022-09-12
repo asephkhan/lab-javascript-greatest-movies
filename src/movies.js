@@ -29,7 +29,7 @@ function scoresAverage(movies) {
     return acc + value.score;
   }, 0)
   
-  if (movies.length === 0) return 0;
+  
   return Number((averageScore/ movies.length).toFixed(2));
 }
 
@@ -41,13 +41,13 @@ function dramaMoviesScore(movies) {
   if (dramaAverage.length === 0) return 0;
 
   let average = dramaAverage.reduce((acc, value)=>{
-   return (acc + value.score)
+   return (acc + value.score);
   }, 0)
   return Number((average/ dramaAverage.length).toFixed(2));
 }
 
 // Iteration 5: Ordering by year - Order by year, ascending (in growing order)
-function orderByYear() {}
+function orderByYear(movies) {}
 
 // Iteration 6: Alphabetic Order - Order by title and print the first 20 titles
 function orderAlphabetically() {}
